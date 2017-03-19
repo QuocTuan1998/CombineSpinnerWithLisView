@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.quoctuan.combinespinnerwithlisview.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtProduct"
+        android:text="Quản lý sản phẩm"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        android:background="#008000"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtProduct"
+        android:id="@+id/txtSpinner"
+        android:text="Danh mục : "
+        android:textSize="20dp"
+        android:textColor="#000000"
+        />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtProduct"
+        android:layout_toRightOf="@+id/txtSpinner"
+        android:id="@+id/spProduct">
+    </Spinner>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSpinner"
+        android:id="@+id/txtCodeProduct"
+        android:text="Mã Sp : "
+        android:textSize="20dp"
+        android:textColor="#000000"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSpinner"
+        android:layout_toRightOf="@+id/txtCodeProduct"
+        android:id="@+id/txtCode"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCode"
+        android:id="@+id/txtNameProduct"
+        android:text="Tên Sp : "
+        android:textSize="20dp"
+        android:textColor="#000000"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCode"
+        android:layout_toRightOf="@id/txtNameProduct"
+        android:id="@+id/txtName"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:layout_toRightOf="@+id/txtNameProduct"
+        android:id="@+id/btnProduct"
+        android:text="Nhận SP"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnProduct"
+        android:id="@+id/txtList"
+        android:text="Danh sách sản phẩm theo danh mục"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:background="#008000"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtList"
+        android:id="@+id/lvProduct">
+    </ListView>
+
+</RelativeLayout>
